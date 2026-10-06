@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09276f" />
+    <title>EduSync | Principal Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="signup-signin/Principal%20%26%20Admin%20Dashboard/admin.css"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <div class="logo-area">
+            <img src="" alt="EduSync Logo" />
+          <div class="brand">EduSync<small>School Platform</small></div>
+        </div>
+        <nav aria-label="Main navigation">
+          <p class="nav-title">CORE</p>
+          <a class="active" href="admin.html"><i></i>Dashboard</a>
+          <a href="learnerprofile.html"><i>?</i>Learner Profiles</a>
+          <a href="teacherprofile.html"><i>?</i>Teachers &amp; Staff</a>
+          <a href="assessment.html"><i>?</i>Assessments &amp; Gradebook</a>
+          <a href="timetable.html"><i>?</i>Timetable &amp; Schedules</a>
+        </nav>
+        <div class="side-bottom">
+          <div class="sync">
+            <i class="dot"></i>Online • Data Synced<span class="cloud">☁</span>
+          </div>
+          <a class="nav-item" href="#help">ⓘ Help &amp; Documentation</a
+          ><a class="nav-item logout" href="signup-signin/signin.html"
+            >⇥ Sign Out</a
+          >
+        </div>
+      </aside>
+      <main class="main" id="dashboard">
+        <header class="topbar">
+          <button
+            class="icon-btn mobile-menu"
+            id="menu-toggle"
+            aria-label="Open navigation"
+          >
+            ☰
+          </button>
+          <div class="school-info">
+            <strong
+              >Westridge Academy <span>• Kimberley (20 km)</span></strong
+            >
+            <div class="line">
+              <span class="term-chip">Term 2 - Active</span>Connecting Schools.
+              Empowering Learning.
+            </div>
+          </div>
+          <div class="top-actions">
+            <button class="icon-btn" aria-label="Search">⌕</button
+            ><button class="role-select">♙ Principal / Admin⌄</button
+            ><button class="icon-btn" aria-label="Messages">
+              ▣<i class="badge-dot"></i></button
+            ><button class="icon-btn" aria-label="Notifications">
+              ♟<i class="badge-red">3</i>
+            </button>
+          </div>
+          <div class="profile">
+            <span class="avatar">BD</span>
+            <div>
+              <b>Dr. Bridgette Dinakedi</b><small>Executive Principal</small>
+            </div>
+          </div>
+        </header>
+        <div class="content">
+          <section class="hero">
+            <div>
+              <span class="eyebrow"
+                ><i class="dot"></i> LIVE CAMPUS TELEMETRY • TERM 2, WEEK
+                6</span
+              >
+              <h1>Good morning, Dr. Dinakedi</h1>
+              <p>
+                Campus operations are running smoothly with 96.4% learner
+                attendance recorded across all five academic blocks today.
+              </p>
+            </div>
+            <div class="hero-actions">
+              <button class="select-term">
+                ▣ &nbsp;Term 2 (Apr – Jun 2025)⌄</button
+              ><button class="primary" id="export-report">
+                ▣ &nbsp;Export Executive PDF Report
+              </button>
+            </div>
+          </section>
+          <section class="metrics" aria-label="Key performance indicators">
+            <article class="card metric">
+              <div class="metric-head">
+                Total enrolled learners<span class="metric-icon">♙</span>
+              </div>
+              <div class="metric-value">
+                <strong>1,248</strong><span>↗ +3.2%</span>
+              </div>
+              <div class="metric-desc">
+                Grades 8 through 12
+                <span class="pill">5 Streams • 36 Classes</span>
+              </div>
+            </article>
+            <article class="card metric">
+              <div class="metric-head">
+                Today's attendance<span class="metric-icon mint">☑</span>
+              </div>
+              <div class="metric-value">
+                <strong>96.4%</strong><span>1,203 present</span>
+              </div>
+              <div class="metric-desc">
+                45 marked absent <span class="pill red">⚠ 4 urgent alerts</span>
+              </div>
+            </article>
+            <article class="card metric">
+              <div class="metric-head">
+                Academic pass rate<span class="metric-icon">♙</span>
+              </div>
+              <div class="metric-value">
+                <strong>91.8%</strong><span>↗ +2.4%</span>
+              </div>
+              <div class="metric-desc">
+                Term 1 Baseline <span class="pill">Above Prov. 89.4%</span>
+              </div>
+            </article>
+            <article class="card metric">
+              <div class="metric-head">
+                Fee collection<span class="metric-icon">▣</span>
+              </div>
+              <div class="metric-value">
+                <strong class="fee-value">R 4,820,500</strong><span>92.7%</span>
+              </div>
+              <div class="metric-desc">Budget Target: R 5,200,000</div>
+              <div class="metric-desc">
+                <span class="meter"><i></i></span>R 379.5k due
+              </div>
+            </article>
+          </section>
+          <section class="dashboard-grid">
+            <div class="left-col">
+              <article class="card attendance" id="attendance">
+                <div class="card-title chart-title">
+                  <div>
+                    <span class="overline">REAL-TIME TRENDS</span>
+                    <h2>Weekly Attendance Dynamics</h2>
+                  </div>
+                  <div class="chart-legend">
+                    <span class="legend-item"
+                      ><i class="legend-dot"></i>Present Rate %</span
+                    ><span class="legend-item"
+                      ><i class="legend-dot green"></i>Excused Absent</span
+                    ><span class="legend-item"
+                      ><i class="legend-dot red"></i>Unexcused</span
+                    >
+                  </div>
+                </div>
+                <div class="chart">
+                  <svg
+                    class="line-chart"
+                    viewBox="0 0 600 220"
+                    preserveAspectRatio="none"
+                    aria-label="Weekly attendance trend"
+                  >
+                    <defs>
+                      <linearGradient id="area" x1="0" x2="0" y1="0" y2="1">
+                        <stop
+                          offset="0"
+                          stop-color="#0b287d"
+                          stop-opacity=".22"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="#0b287d"
+                          stop-opacity="0"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M35 75 C100 72 135 65 170 62 S250 48 305 43 S390 35 440 52 S515 82 565 40 L565 205 L35 205 Z"
+                      fill="url(#area)"
+                    />
+                    <path
+                      d="M35 75 C100 72 135 65 170 62 S250 48 305 43 S390 35 440 52 S515 82 565 40"
+                      fill="none"
+                      stroke="#09267a"
+                      stroke-width="4"
+                    />
+                    <g fill="white" stroke="#09267a" stroke-width="3">
+                      <circle cx="35" cy="75" r="5" />
+                      <circle cx="170" cy="62" r="5" />
+                      <circle cx="305" cy="43" r="5" />
+                      <circle cx="440" cy="52" r="5" />
+                    </g>
+                    <circle cx="565" cy="40" r="5" fill="#08796f" />
+                    <g>
+                      <rect
+                        x="47"
+                        y="166"
+                        width="31"
+                        height="32"
+                        rx="4"
+                        fill="#08796f"
+                      />
+                      <rect
+                        x="47"
+                        y="146"
+                        width="31"
+                        height="16"
+                        rx="4"
+                        fill="#c81919"
+                      />
+                      <rect
+                        x="176"
+                        y="171"
+                        width="31"
+                        height="27"
+                        rx="4"
+                        fill="#08796f"
+                      />
+                      <rect
+                        x="176"
+                        y="154"
+                        width="31"
+                        height="13"
+                        rx="4"
+                        fill="#c81919"
+                      />
+                      <rect
+                        x="305"
+                        y="177"
+                        width="31"
+                        height="21"
+                        rx="4"
+                        fill="#08796f"
+                      />
+                      <rect
+                        x="305"
+                        y="164"
+                        width="31"
+                        height="10"
+                        rx="4"
+                        fill="#c81919"
+                      />
+                      <rect
+                        x="434"
+                        y="170"
+                        width="31"
+                        height="28"
+                        rx="4"
+                        fill="#08796f"
+                      />
+                      <rect
+                        x="434"
+                        y="150"
+                        width="31"
+                        height="16"
+                        rx="4"
+                        fill="#c81919"
+                      />
+                      <rect
+                        x="554"
+                        y="159"
+                        width="31"
+                        height="39"
+                        rx="4"
+                        fill="#08796f"
+                      />
+                      <rect
+                        x="554"
+                        y="140"
+                        width="31"
+                        height="16"
+                        rx="4"
+                        fill="#c81919"
+                      />
+                    </g>
+                  </svg>
+                  <div class="chart-labels">
+                    <span>Mon</span><span>Tue</span><span>Wed</span
+                    ><span>Thu</span><span class="today">Today</span>
+                  </div>
+                </div>
+                <div class="chart-note">
+                  <span>✣</span> Sports day inter-school squad travel accounted
+                  for 24 excused absences today.<a href="#attendance-register"
+                    >View register</a
+                  >
+                </div>
+              </article>
+              <div class="two-cards">
+                <article class="card proficiency">
+                  <h2>
+                    Subject Proficiency Index <small>Term 2 Targets</small>
+                  </h2>
+                  <div class="subject">
+                    <div class="subject-label">
+                      <span>Mathematics</span><span>84.2% <b>(+3.1%)</b></span>
+                    </div>
+                    <div class="progress">
+                      <span style="width: 84.2%"></span>
+                    </div>
+                  </div>
+                  <div class="subject">
+                    <div class="subject-label">
+                      <span>Physical Sciences</span
+                      ><span>79.6% <b>(+1.8%)</b></span>
+                    </div>
+                    <div class="progress">
+                      <span style="width: 79.6%"></span>
+                    </div>
+                  </div>
+                  <div class="subject">
+                    <div class="subject-label">
+                      <span>English First Additional</span
+                      ><span>94.8% <b>(+0.5%)</b></span>
+                    </div>
+                    <div class="progress teal">
+                      <span style="width: 94.8%"></span>
+                    </div>
+                  </div>
+                  <div class="subject">
+                    <div class="subject-label">
+                      <span>Life Sciences</span
+                      ><span>88.3% <b>(+4.0%)</b></span>
+                    </div>
+                    <div class="progress">
+                      <span style="width: 88.3%"></span>
+                    </div>
+                  </div>
+                </article>
+                <article class="card cohort">
+                  <div class="card-title">
+                    <h2>Cohort Grade Distribution</h2>
+                    <small>1,248 Enrolled</small>
+                  </div>
+                  <div class="cohort-grades">
+                    <div class="grade">
+                      <small>Gr 8</small><b>260</b><em>20.8%</em>
+                    </div>
+                    <div class="grade">
+                      <small>Gr 9</small><b>255</b><em>20.4%</em>
+                    </div>
+                    <div class="grade">
+                      <small>Gr 10</small><b>248</b><em>19.9%</em>
+                    </div>
+                    <div class="grade">
+                      <small>Gr 11</small><b>245</b><em>19.6%</em>
+                    </div>
+                    <div class="grade">
+                      <small>Gr 12</small><b>240</b><em>19.2%</em>
+                    </div>
+                  </div>
+                  <div class="gender-label">
+                    <span>Female Learners (648 • 51.9%)</span
+                    ><span>Male Learners (600 • 48.1%)</span>
+                  </div>
+                  <div class="gender-bar"><span></span><span></span></div>
+                </article>
+              </div>
+              <article class="card strategy">
+                <div class="strategy-head">
+                  <h2>✣ Campus Strategic Focus: STEM &amp; Matric Readiness</h2>
+                  <span class="priority">Priority 1 Status</span>
+                </div>
+                <div class="strategy-items">
+                  <div class="strategy-item">
+                    <strong>Grade 12 Science Lab</strong
+                    ><small>100% Practical completion</small>
+                  </div>
+                  <div class="strategy-item">
+                    <strong>HOD Faculty Review</strong
+                    ><small>Moderation week 6 underway</small>
+                  </div>
+                  <div class="strategy-item">
+                    <strong>Campus Infrastructure</strong
+                    ><small>Backup solar active: 98%</small>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <aside class="right-col">
+              <article class="card approval-card">
+                <div class="approval-heading">
+                  <h2>🚨 Urgent Approvals</h2>
+                  <span class="pending" id="pending-count">3 Pending</span>
+                </div>
+                <div class="approval">
+                  <div class="approval-top">
+                    <h3>Learner Welfare Escalation</h3>
+                    <span class="tag">CRITICAL</span>
+                  </div>
+                  <p>
+                    Parent conference requested:
+                    <b>Lerato Dlamini (Gr 11B)</b> reached 3 consecutive
+                    unexcused absences.
+                  </p>
+                  <div class="approval-actions">
+                    <button class="subtle-btn dismiss">Dismiss</button
+                    ><button class="small-primary">Review Dossier</button>
+                  </div>
+                </div>
+                <div class="approval">
+                  <div class="approval-top">
+                    <h3>Matric Moderation Sign-off</h3>
+                    <span class="tag blue">CURRICULUM</span>
+                  </div>
+                  <p>
+                    Physical Sciences Grade 12 Mid-year practical assessments
+                    ready for executive stamp.
+                  </p>
+                  <div class="approval-actions">
+                    <button class="small-primary green approve">
+                      Approve &amp; Sign
+                    </button>
+                  </div>
+                </div>
+                <div class="approval">
+                  <div class="approval-top">
+                    <h3>SGB Monthly Expenditure</h3>
+                    <span class="tag blue">FINANCE</span>
+                  </div>
+                  <p>
+                    Capital outlay for STEM laboratory robotics kits (R 45,200)
+                    submitted by Bursar.
+                  </p>
+                  <div class="approval-actions">
+                    <button class="subtle-btn">View Invoices</button
+                    ><button class="small-primary approve">Authorize</button>
+                  </div>
+                </div>
+              </article>
+              <article class="card activity">
+                <div class="card-title">
+                  <h2>✣ School Activity Stream</h2>
+                  <span class="live">Live Feed</span>
+                </div>
+                <div class="event">
+                  <h3>Emergency SMS Broadcast <time>12 min ago</time></h3>
+                  <p>
+                    Winter Sports fixture adjustment dispatched to 840
+                    guardians...
+                  </p>
+                </div>
+                <div class="event">
+                  <h3>EFT Fee Reconciliation <time>34 min ago</time></h3>
+                  <p>
+                    18 transactions totaling R 68,400 auto-matched and cleared
+                    into standard account.
+                  </p>
+                </div>
+                <div class="event">
+                  <h3>Educator Biometric Log <time>1 hr ago</time></h3>
+                  <p>
+                    54 of 55 academic personnel checked in. 1 educator on
+                    sanctioned department leave.
+                  </p>
+                </div>
+                <div class="event">
+                  <h3>Visitor Gate Access <time>2 hrs ago</time></h3>
+                  <p>
+                    Gauteng Dept of Education District Auditor checked in at
+                    Main Gate Alpha.
+                  </p>
+                </div>
+                <button class="audit">Open Audit Ledger</button>
+              </article>
+              <button class="helpdesk" id="helpdesk">
+                <span class="help-icon">ⓘ</span
+                ><span
+                  ><strong>Executive Help Desk</strong
+                  ><span>Direct escalation hotline...</span></span
+                >
+              </button>
+            </aside>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="signup-signin/Principal%20%26%20Admin%20Dashboard/admin.js"></script>
+  </body>
+</html>

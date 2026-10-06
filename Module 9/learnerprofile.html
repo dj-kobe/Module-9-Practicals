@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09276f" />
+    <title>Learner Profile | EduSync</title>
+    <link rel="stylesheet" href="learnerprofile.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="admin.html"
+          ><img src="signup-signin/edusync_logo.png" alt="EduSync" /><span
+            >EduSync<small>School Platform</small></span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <p class="nav-title">CORE</p>
+          <a href="admin.html"><i>?</i>Dashboard</a>
+          <a class="active" href="learnerprofile.html"><i>?</i>Learner Profiles</a>
+          <a href="teacherprofile.html"><i>?</i>Teachers &amp; Staff</a>
+          <a href="assessment.html"><i>?</i>Assessments &amp; Gradebook</a>
+          <a href="timetable.html"><i>?</i>Timetable &amp; Schedules</a>
+        </nav>
+
+        <div class="side-footer">
+          <span><b></b>Online • Data Synced</span
+          ><a href="#help">ⓘ &nbsp;Help &amp; Documentation</a
+          ><a class="signout" href="signup-signin/signin.html"
+            >⇥ &nbsp;Sign Out</a
+          >
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            ☰
+          </button>
+          <div class="school">
+            <b>Westridge Academy <span>• Kimberley (20 km)</span></b
+            ><small
+              ><em>Term 2 • Active</em> Connecting Schools. Empowering
+              Learning.</small
+            >
+          </div>
+          <div class="top-actions">
+            <button aria-label="Search">⌕ <kbd>⌘K</kbd></button
+            ><button class="role">♙ Principal / Admin⌄</button
+            ><button class="notice" aria-label="Messages">▣</button
+            ><button class="notice red" aria-label="Notifications">
+              ♟<b>3</b>
+            </button>
+          </div>
+          <div class="user">
+            <div class="avatar">BD</div>
+            <div>
+              <b>Dr. Bridgette Dinakedi</b><small>Executive Principal</small>
+            </div>
+            <span>☷</span>
+          </div>
+        </header>
+        <div class="page">
+          <section class="page-heading">
+            <div>
+              <div class="crumb">
+                ⌂ &nbsp;Learners &amp; Profiles &nbsp;/&nbsp; Grade 11
+                &nbsp;/&nbsp; Class 11A &nbsp;/&nbsp; Liam van der Merwe
+              </div>
+              <h1>Learner Dossier &amp; Cumulative Record</h1>
+              <span class="cycle">● 2026 Academic Cycle Active</span>
+            </div>
+            <div class="heading-actions">
+              <button class="btn" onclick="window.print()">
+                ▣ &nbsp;Print Dossier (PDF)</button
+              ><button
+                class="btn danger"
+                data-message="Incident logging is ready for this learner."
+              >
+                ⚠ &nbsp;Log Incident</button
+              ><button
+                class="btn"
+                data-message="A guardian message can be sent from the communications module."
+              >
+                ▤ &nbsp;Message Guardian</button
+              ><button
+                class="btn primary"
+                data-message="Learner details are ready to edit."
+              >
+                ✎ &nbsp;Edit Details
+              </button>
+            </div>
+          </section>
+          <section class="profile-card" id="profile">
+            <img
+              class="student-photo"
+              src="signup-signin/Principal & Admin Dashboard/WhatsApp Image 2026-09-30 at 09.28.44.jpeg"
+              alt="Tshepo Louw profile photo"
+            />
+            <div class="student-info">
+              <h2>Tshepo Louw</h2>
+              <span class="pronouns">(He/Him)</span>
+              <p>♙ &nbsp;28 September 2008 (Age 17)</p>
+              <p>◉ &nbsp;SA Citizen #0809285190981</p>
+              <span class="tag">♧ &nbsp;Grade 11A • STEM Stream</span
+              ><span class="tag">EMIS: 700400122-8491</span>
+              <div>
+                <span class="house">◉ Kalahari Eagles House</span
+                ><span class="standing">✓ Good Standing</span>
+              </div>
+            </div>
+            <div class="quick-stats">
+              <article>
+                <small>ACADEMIC AGGREGATE <b>♙</b></small
+                ><strong>78.4% <i>↗ +2.1%</i></strong
+                ><span>Rank 4 of 32 in 11A • ...</span>
+              </article>
+              <article>
+                <small>ATTENDANCE RATE <b>☑</b></small
+                ><strong>98.2% <i>Term 2</i></strong
+                ><span>54 / 55 Days Present</span>
+              </article>
+              <article>
+                <small>CONDUCT SCORE <b>♜</b></small
+                ><strong>Exemplary</strong><span>0 Demerits • 4 Comm...</span>
+              </article>
+              <article>
+                <small>SCHOOL LEVIES <b>▣</b></small
+                ><strong>R 0.00 <i class="settled">Settled</i></strong
+                ><span>Acc #PRNT-4402 (De...)</span>
+              </article>
+            </div>
+          </section>
+          <nav class="tabs" aria-label="Learner profile sections">
+            <button class="tab active" data-tab="overview">
+              ▣ &nbsp;Overview &amp; Academic History</button
+            ><button class="tab" data-tab="attendance-panel">
+              ☑ &nbsp;Attendance &amp; Biometrics</button
+            ><button class="tab" data-tab="family-panel">
+              ♟ &nbsp;Parent &amp; Guardian Info</button
+            ><button class="tab" data-tab="care-panel">
+              ♙ &nbsp;Discipline &amp; Pastoral Care</button
+            ><button class="tab-icon" aria-label="More profile sections">
+              ⚙
+            </button>
+          </nav>
+          <div class="columns" id="overview">
+            <div class="primary-column">
+              <section class="panel trajectory">
+                <div class="section-head">
+                  <div>
+                    <h2>⌁ Term-by-Term Trajectory</h2>
+                    <p>
+                      Grade 10 Term 1 to Grade 11 Term 2 cumulative average
+                      progression
+                    </p>
+                  </div>
+                  <div class="trend-badges">
+                    <span>↗ &nbsp;<b>+4.2%</b> Year-on-Year</span
+                    ><span>Current: <b>78.4%</b></span>
+                  </div>
+                </div>
+                <div class="chart">
+                  <svg
+                    viewBox="0 0 720 255"
+                    preserveAspectRatio="none"
+                    role="img"
+                    aria-label="Learner average rising from 71.8 to 78.4 percent"
+                  >
+                    <defs>
+                      <linearGradient id="fill" x1="0" x2="0" y1="0" y2="1">
+                        <stop
+                          offset="0"
+                          stop-color="#203e91"
+                          stop-opacity=".24"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="#203e91"
+                          stop-opacity="0"
+                        />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M35 175 C100 170 130 155 180 145 S245 125 300 126 S400 130 455 112 S500 82 540 72 S625 45 680 38 L680 225 L35 225Z"
+                      fill="url(#fill)"
+                    />
+                    <path
+                      d="M35 175 C100 170 130 155 180 145 S245 125 300 126 S400 130 455 112 S500 82 540 72 S625 45 680 38"
+                      fill="none"
+                      stroke="#092b82"
+                      stroke-width="4"
+                    />
+                    <g stroke="#dbe3ff" stroke-dasharray="4 5">
+                      <path d="M0 65H720" />
+                      <path d="M0 115H720" />
+                      <path d="M0 165H720" />
+                      <path d="M0 215H720" />
+                    </g>
+                    <g fill="#fff" stroke="#092b82" stroke-width="3">
+                      <circle cx="35" cy="175" r="6" />
+                      <circle cx="180" cy="145" r="6" />
+                      <circle cx="300" cy="126" r="6" />
+                      <circle cx="540" cy="72" r="6" />
+                    </g>
+                    <circle cx="680" cy="38" r="7" fill="#07877b" />
+                    <g fill="#22345f" font-size="13" font-family="sans-serif">
+                      <text x="20" y="160">71.8%</text>
+                      <text x="165" y="130">73.2%</text>
+                      <text x="284" y="111">74.5%</text>
+                      <text x="520" y="57">76.0%</text>
+                      <text x="625" y="20">78.4% (Term 2)</text>
+                    </g>
+                  </svg>
+                  <div class="chart-labels">
+                    <span>2024 Gr 10 T1</span><span>2024 Gr 10 T2</span
+                    ><span>2024 Gr 10 T3</span><span>2024 Gr 10 Final</span
+                    ><b>2025 Gr 11 T2 ★</b>
+                  </div>
+                </div>
+              </section>
+              <section class="panel subject-panel">
+                <div class="section-head">
+                  <div>
+                    <h2>▤ CAPS Subject Breakdown</h2>
+                    <p>
+                      Continuous Assessment (SBA), Term Assessments, and
+                      Diagnostic Tracking
+                    </p>
+                  </div>
+                  <button
+                    class="btn"
+                    data-message="The marks sheet is being prepared for export."
+                  >
+                    ⇩ &nbsp;Export Marks Sheet
+                  </button>
+                </div>
+                <div class="table-wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Subject &amp; Educator</th>
+                        <th>Term 1</th>
+                        <th>Term 2</th>
+                        <th>SBA / Prac</th>
+                        <th>Status / Vector</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <b>Mathematics (Core)</b
+                          ><small>Educator: Mr. J. Sithole</small>
+                        </td>
+                        <td>80%</td>
+                        <td class="strong">82%</td>
+                        <td>84% (SBA)</td>
+                        <td>
+                          <span class="status mint">◉ Distinction Track</span>
+                        </td>
+                        <td>◉</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b>Information Technology</b
+                          ><small>Educator: Mrs. E. Venter</small>
+                        </td>
+                        <td>85%</td>
+                        <td class="strong">88%</td>
+                        <td>92% (Prac)</td>
+                        <td>
+                          <span class="status blue">♟ Dux Contender</span>
+                        </td>
+                        <td>◉</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b>Physical Sciences</b
+                          ><small>Educator: Dr. P. Naidoo</small>
+                        </td>
+                        <td>74%</td>
+                        <td class="strong">76%</td>
+                        <td>80% (Lab)</td>
+                        <td><span class="status">✓ On Target</span></td>
+                        <td>◉</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b>English Home Language</b
+                          ><small>Educator: Ms. C. Botha</small>
+                        </td>
+                        <td>79%</td>
+                        <td class="strong">81%</td>
+                        <td>84% (Oral)</td>
+                        <td><span class="status mint">♧ Strong</span></td>
+                        <td>◉</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b>Afrikaans Eerste Addisionele Taal</b
+                          ><small>Educator: Mev. D. Mareis</small>
+                        </td>
+                        <td>70%</td>
+                        <td class="strong">72%</td>
+                        <td>74%</td>
+                        <td><span class="status">Progressing</span></td>
+                        <td>◉</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b>Life Orientation</b
+                          ><small>Educator: Mr. K. Dlamini</small>
+                        </td>
+                        <td>76%</td>
+                        <td class="strong">75%</td>
+                        <td>78% (PET)</td>
+                        <td><span class="status">Consistent</span></td>
+                        <td>◉</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <b>Engineering Graphics &amp; Design (EGD)</b
+                          ><small>Educator: Mr. B. Fourie</small>
+                        </td>
+                        <td>77%</td>
+                        <td class="strong">79%</td>
+                        <td>82% (CAD)</td>
+                        <td><span class="status mint">↗ Advanced</span></td>
+                        <td>◉</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section class="panel submissions">
+                <div class="section-head">
+                  <div>
+                    <h2>▣ Recent Assessment Submissions</h2>
+                    <p>
+                      Logged marks, teacher moderation, and comparative grade
+                      percentiles
+                    </p>
+                  </div>
+                  <a href="#assessments">View All 24 Tasks</a>
+                </div>
+                <div class="submission-grid">
+                  <article>
+                    <div>
+                      <small>MATHEMATICS ◉ Moderated</small
+                      ><span>Calculus &amp; Optimization Investigation</span
+                      ><small>Submitted on 28 May 2025</small>
+                    </div>
+                    <b>46<small> / 50</small><em>92.0%</em></b>
+                  </article>
+                  <article>
+                    <div>
+                      <small>INFORMATION TECH ✣ Highest in Gr 11</small
+                      ><span>Relational Database &amp; SQL Architecture</span
+                      ><small>Submitted on 04 June 2025</small>
+                    </div>
+                    <b>94<small> / 100</small><em>94.0%</em></b>
+                  </article>
+                  <article>
+                    <div>
+                      <small>PHYSICAL SCIENCES ✓ On Time</small
+                      ><span
+                        >Newtonian Mechanics &amp; Friction Dynamics Lab</span
+                      ><small>Submitted on 11 June 2025</small>
+                    </div>
+                    <b>38<small> / 50</small><em>76.0%</em></b>
+                  </article>
+                </div>
+              </section>
+            </div>
+            <aside class="secondary-column">
+              <section class="panel guardians">
+                <div class="section-head">
+                  <h2>♟ Family &amp; Guardians</h2>
+                  <span class="count">2 Contacts</span>
+                </div>
+                <div class="emergency">
+                  <b>! &nbsp;EMERGENCY PROTOCOL</b
+                  ><span
+                    >Call Mother (Marietjie) 1st. If unreachable after 5 min,
+                    contact Father (Johannes).</span
+                  >
+                </div>
+                <article class="contact">
+                  <h3>Marietjie van der Merwe <span>Primary</span></h3>
+                  <small>Mother</small>
+                  <p>▯ &nbsp;+27 83 412 8831</p>
+                  <p>▦ &nbsp;Architect • Studio Matrix</p>
+                </article>
+                <article class="contact">
+                  <h3>
+                    Johannes van der Merwe <span class="payer">Fee Payer</span>
+                  </h3>
+                  <small>Father</small>
+                  <p>▯ &nbsp;+27 82 555 9182</p>
+                  <p>▦ &nbsp;Principal Engineer • Sasol</p>
+                </article>
+                <div class="address">
+                  <small>REGISTERED RESIDENCE</small>
+                  <p>
+                    142 Jacaranda Avenue, Constantia Kloof, Roodepoort, 1709
+                  </p>
+                  <div class="map">
+                    <span>142 Jacaranda Ave · Roodepoort</span
+                    ><button
+                      data-message="Geofence map opened for this learner's residence."
+                    >
+                      ⌖ &nbsp;View Geofence Zone
+                    </button>
+                  </div>
+                </div>
+              </section>
+              <section class="panel medical">
+                <div class="section-head">
+                  <h2>✚ Medical &amp; Dietary</h2>
+                  <span class="alert">⚠ Alert Active</span>
+                </div>
+                <div class="medical-grid">
+                  <div><small>BLOOD GROUP</small><b>O Positive</b></div>
+                  <div>
+                    <small>DIETARY NEEDS</small><b>Standard / No Nuts</b>
+                  </div>
+                </div>
+                <div class="allergy">
+                  <b>✱ &nbsp;Allergy: Mild Penicillin</b
+                  ><span
+                    >Must verify antibiotics with parents &amp; Dr.
+                    Retief.</span
+                  >
+                </div>
+                <article class="scheme">
+                  <span>Medical Scheme <b>Active Cover</b></span
+                  ><strong>Discovery Health Classic Comprehensive</strong
+                  ><small>Membership: #90214812 • Dependent 03</small
+                  ><small
+                    >Dr. H. Retief (Paediatrician)
+                    <a href="tel:+27117601200">+27 11 760 1200</a></small
+                  >
+                </article>
+              </section>
+              <section class="panel leadership">
+                <div class="section-head">
+                  <h2>⚑ Leadership &amp; Co-Curricular</h2>
+                </div>
+                <div class="club">
+                  <i>♜</i
+                  ><span
+                    ><b>1st Team Chess Captain</b
+                    ><small
+                      >Central Gauteng League • Undefeated Board 1</small
+                    ></span
+                  >
+                </div>
+                <div class="club">
+                  <i>♧</i
+                  ><span
+                    ><b>Robotics Club: Lead Programmer</b
+                    ><small>FIRST Tech Challenge SA Finalist</small></span
+                  >
+                </div>
+                <div class="club">
+                  <i>◉</i
+                  ><span
+                    ><b>U17B Rugby Squad</b
+                    ><small>Flanker / Position 6 • Term 2 Fixtures</small></span
+                  >
+                </div>
+              </section>
+              <section class="panel documents">
+                <div class="section-head">
+                  <h2>▣ Document Vault</h2>
+                  <span class="count">5 / 5 Compliant</span>
+                </div>
+                <div class="document">
+                  ▤ &nbsp;Certified Birth Certificate
+                  <small>Verified by Home Affairs API</small><b>✓</b>
+                </div>
+                <div class="document">
+                  ▤ &nbsp;Grade 10 Final DBE Report
+                  <small>Signed Principal Stamp • Dec 2024</small><b>✓</b>
+                </div>
+                <div class="document">
+                  ▤ &nbsp;2025 Indemnity &amp; Sports
+                  <small>Digital Signature by M. van der Merwe</small><b>✓</b>
+                </div>
+                <div class="document">
+                  ▤ &nbsp;Medical Clearance &amp; Ortho...
+                  <small>Valid through Nov 2025</small><b>✓</b>
+                </div>
+                <button
+                  class="upload"
+                  data-message="Choose a credential file to add it to the document vault."
+                >
+                  ⇧ &nbsp;Upload Additional Credential
+                </button>
+              </section>
+            </aside>
+          </div>
+          <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        </div>
+      </main>
+    </div>
+    <script src="learnerprofile.js"></script>
+  </body>
+</html>

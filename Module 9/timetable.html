@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#092875" />
+    <title>Timetable &amp; Master Schedule | EduSync</title>
+    <link rel="stylesheet" href="timetable.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="admin.html"
+          ><img src="signup-signin/edusync_logo.png" alt="EduSync" /><span
+            >EduSync<small>School Platform</small></span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <p>CORE</p>
+          <a href="admin.html"><i>?</i>Dashboard</a>
+          <a href="learnerprofile.html"><i>?</i>Learners &amp; Profiles</a>
+          <a href="teacherprofile.html"><i>?</i>Teachers &amp; Staff</a>
+          <a href="assessment.html"><i>?</i>Assessments &amp; Gradebook</a>
+          <a class="active" href="timetable.html"><i>?</i>Timetable &amp; Schedules</a>
+        </nav>
+        <footer>
+          <span>● Online • Data Synced</span
+          ><a href="#help">ⓘ Help &amp; Documentation</a
+          ><a class="out" href="signup-signin/signin.html">⇥ Sign Out</a>
+        </footer>
+      </aside>
+      <main>
+        <header class="topbar">
+          <button id="menu" aria-label="Open navigation">☰</button>
+          <div class="school">
+            <b>Westridge Academy <small>• Johannesburg (20 km)</small></b
+            ><span
+              ><em>Term 2 - Active</em> &nbsp; Connecting Schools. Empowering
+              Learning.</span
+            >
+          </div>
+          <div class="actions">
+            <button>⌕ <kbd>⌘K</kbd></button
+            ><button class="role">♙ Principal / Admin⌄</button><button>▣</button
+            ><button>♟<b class="badge">3</b></button>
+          </div>
+          <div class="user">
+            <i>BD</i
+            ><span
+              ><b>Dr. Bridgette Dinakedi</b
+              ><small>Executive Principal</small></span
+            >☷
+          </div>
+        </header>
+        <div class="content">
+          <div class="crumb">
+            ♙ Academics &amp; Operations &nbsp;›&nbsp; Timetable &amp; Master
+            Schedule &nbsp; <span>Term 2 (2025)</span>
+          </div>
+          <div class="actions-row">
+            <button id="export">▣ Export PDF</button
+            ><button data-toast="Room placards are ready to print.">
+              ▤ Room Placards</button
+            ><button
+              class="soft"
+              data-toast="AI timetable generation preview started."
+            >
+              ✣ Auto-Generate AI (Beta)</button
+            ><button
+              class="primary"
+              data-toast="Substitution scheduler opened."
+            >
+              ⊕ Schedule Substitution
+            </button>
+          </div>
+          <section class="intro">
+            <div class="intro-title">
+              <i>▥</i>
+              <div>
+                <h1>
+                  Interactive Master<br class="desktop" />
+                  Timetable &amp; Class Matrix
+                </h1>
+                <p>
+                  Real-time multi-dimensional scheduling engine. Conflict-free
+                  class allocation &amp; educator deployment.
+                </p>
+              </div>
+            </div>
+            <div class="status-chips">
+              <span>● CYCLE: <b>10-Day Cycle (Week A)</b></span
+              ><span>◷ Slot: <b>50 Min</b></span
+              ><span class="ok">◉ 0 Hardware / Room Conflicts</span
+              ><span class="warning">♧ 1 Substitution Pending</span>
+            </div>
+          </section>
+          <section class="viewbar">
+            <div class="tabs">
+              <button class="active" data-view="Class / Grade View">
+                ♙ Class / Grade View</button
+              ><button data-view="Educator View">♟ Educator View</button
+              ><button data-view="Facility & Lab View">
+                ▣ Facility &amp; Lab View</button
+              ><button data-view="Master Bell Bells">
+                ♧ Master Bell Bells
+              </button>
+            </div>
+            <div class="week">
+              <button id="prev-week" aria-label="Previous week">‹</button
+              ><span
+                >▣ &nbsp;<b id="week-label">Week A: 19 May – 23 May 2025</b>
+                &nbsp;<em>Active Cycle</em></span
+              ><button id="next-week" aria-label="Next week">›</button>
+            </div>
+          </section>
+          <section class="filters">
+            <label
+              >COHORT / STREAM<select id="cohort">
+                <option>Grade 11A • STEM Focus (34 Learners)</option>
+                <option>Grade 10A • Mathematics</option>
+                <option>Grade 12A • Science</option>
+              </select></label
+            ><label
+              >FACILITY CLUSTER<select id="facility">
+                <option>All Assigned Venues</option>
+                <option>Laboratories</option>
+                <option>Classrooms</option>
+                <option>Sports Facilities</option>
+              </select></label
+            >
+            <div class="legend">
+              <span>● Mathematics</span><span>● Physical Sciences</span
+              ><span>● Life Sciences</span><span>● IT &amp; Coding</span
+              ><span>● Languages</span>
+            </div>
+          </section>
+          <div class="layout">
+            <section class="matrix-wrap">
+              <div class="matrix-scroll">
+                <div class="matrix" id="matrix"></div>
+              </div>
+            </section>
+            <aside class="rightcol">
+              <section class="panel inspector">
+                <div class="panel-head">
+                  <h2>☷ Period Inspector</h2>
+                  <span class="active-chip">Active Selection</span>
+                </div>
+                <div id="inspection">
+                  <div class="slot">SLOT: TUESDAY • PERIOD 1 &amp; 2</div>
+                  <div class="course">Physical Sciences<br />Lab Practical</div>
+                  <div class="educator">
+                    <i>JS</i>
+                    <div>
+                      <b>Mr. Jabulani Sithole</b
+                      ><small>HOD Natural Sciences • 24/28 Periods</small>
+                    </div>
+                    <a href="teacherprofile.html">↗</a>
+                  </div>
+                  <div class="inspect-grid">
+                    <div>
+                      <small>Venue / Facility</small
+                      ><b id="room">Lab 2 (Optics)</b
+                      ><small>Cap: 36 (Current: 34)</small>
+                    </div>
+                    <div>
+                      <small>Support Staff</small><b>M. Cele</b
+                      ><small class="teal">Lab Tech Active</small>
+                    </div>
+                  </div>
+                  <div class="milestone">
+                    <b>▣ Curriculum Milestone:</b>
+                    <p>
+                      CAPS Topic 3.2: Newton's Second Law verification using
+                      dynamic trolleys and ticker timers.
+                    </p>
+                    <small
+                      >▤ 12x Dynamics Kits reserved • Consumables prep
+                      complete</small
+                    >
+                  </div>
+                  <div class="inspect-actions">
+                    <button data-toast="Reschedule dialog opened.">
+                      ▣<small>Reschedule</small></button
+                    ><button data-toast="Facility relocation options loaded.">
+                      ♧<small>Relocate</small></button
+                    ><button
+                      class="attend"
+                      data-toast="Attendance tracker opened for this class."
+                    >
+                      ▣<small>Attendance</small>
+                    </button>
+                  </div>
+                </div>
+              </section>
+              <section class="panel health">
+                <div class="panel-head">
+                  <h2>⌁ Schedule Health &amp; Load</h2>
+                  <span>Updated Live</span>
+                </div>
+                <div class="healthbox">
+                  <div class="health-icon">◉</div>
+                  <div>
+                    <b>Staff Double-Bookings</b
+                    ><small>All 48 educators in unique rooms</small>
+                  </div>
+                  <strong>0<br />Clashes</strong>
+                </div>
+                <div class="util">
+                  <b>STEM Facilities Utilization <strong>88%</strong></b>
+                  <div class="bar"><i></i></div>
+                  <small
+                    >Comp Lab 1: 92% &nbsp; Physics Lab 2: 84% &nbsp; Chem Lab:
+                    78%</small
+                  >
+                </div>
+                <div class="homework">
+                  <span>▥</span>
+                  <div>
+                    <b>Homework Intensity</b
+                    ><small>Grade 11 Tuesday: 1 Lab Report Due</small>
+                  </div>
+                  <em>Balanced</em>
+                </div>
+              </section>
+              <section class="panel relief">
+                <div class="panel-head">
+                  <h2>✱ Relief Duty Quick-Finder</h2>
+                  <b class="alert">1 Alert</b>
+                </div>
+                <p>
+                  Quickly identify educators with free periods to cover
+                  absences, moderations, or district meetings.
+                </p>
+                <div class="relief-alert">
+                  <b>▣ Wed • Period 4<br />(11:05 - 11:55)</b
+                  ><span>Needs Relief</span>
+                  <p>
+                    Subject: Physical Sciences • Absent: Mr. J. Sithole
+                    (District Moderation)
+                  </p>
+                  <small>AVAILABLE QUALIFIED FREE EDUCATORS:</small>
+                  <article>
+                    <i>EV</i>
+                    <div>
+                      <b>Mrs. E. Venter</b
+                      ><small>Free Period Load: 21/28</small>
+                    </div>
+                    <button class="assigned">Assigned</button>
+                  </article>
+                  <article>
+                    <i>PN</i>
+                    <div>
+                      <b>Dr. P. Naidoo</b><small>Free Period Load: 26/28</small>
+                    </div>
+                    <button class="select-relief">Select</button>
+                  </article>
+                  <button class="confirm" id="confirm-relief">
+                    Confirm &amp; Send SMS/Push Notification
+                  </button>
+                </div>
+              </section>
+            </aside>
+          </div>
+          <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        </div>
+      </main>
+    </div>
+    <script src="timetable.js"></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+  <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09276f" />
+    <title>Create your EduSync account</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <div class="demo" aria-label="Quick demo access">
+        <span class="shield" aria-hidden="true"></span
+        >
+        <div class="people">
+          <button
+            class="chip"
+            type="button"
+            data-name="Nandi Khumalo"
+            data-email="n.khumalo@westridge.edu.za"
+            data-role="Principal"
+          >
+            ● Dr. B. Dinakedi (Principal)</button
+          ><button
+            class="chip"
+            type="button"
+            data-name="James Sithole"
+            data-email="j.sithole@westridge.edu.za"
+            data-role="Teacher"
+          >
+            ● Teacher J. Sithole</button
+          ><button
+            class="chip"
+            type="button"
+            data-name="M. Van Der Merwe"
+            data-email="parent@example.com"
+            data-role="Parent"
+          >
+            ● Parent M. Van Der Merwe
+          </button>
+        </div>
+      </div>
+      <section class="layout">
+        <aside class="brand">
+          <div class="brand-head">
+            <img class="logo" src="edusync_logo.png" alt="EduSync Logo" aria-hidden="true" />
+      
+            <div>
+              <div class="brand-name">EduSync</div>
+              <div class="brand-tag">School Cloud OS</div>
+              
+            </div>
+          </div>
+          <div class="term">Term 1 Academic Session 2026</div>
+          <h1>Connecting Schools.<br />Empowering Learning.</h1>
+          <p class="intro">
+            Streamlined school operations, smart gradebooks, automated SASAMS
+            compliance, and unified student progress tracking.
+          </p>
+          <div class="stats">
+            <div class="stat">
+              <b>700+</b><span>Enrolled Students</span
+              ><small>↗ 98.4% Attendance</small>
+            </div>
+            <div class="stat">
+              <b>100%</b><span>EMIS &amp; SASAMS</span
+              ><small> Verified Cloud</small>
+            </div>
+          </div>
+          <div class="campus">
+            <div class="campus-label">
+              <span>⌂ &nbsp;Westridge Academy • Northern Cape</span
+              ><span>EMIS: 700400122</span>
+            </div>
+          </div>
+          <div class="trust">
+            <span> &nbsp;RSA DBE Approved</span
+            ><span> &nbsp;256-Bit SSL</span>
+          </div>
+        </aside>
+        <section class="form-side" aria-labelledby="heading">
+          <div class="form-wrap">
+            <div class="form-top">
+              <div>
+                <h2 id="heading">
+                  Create your EduSync account
+                  <span style="color: #138d80">●</span>
+                </h2>
+                <p class="subtitle">
+                  Join your academic workspace and get started
+                </p>
+              </div>
+              <span class="locale">🌐 &nbsp;ZA (GMT+2) / En</span>
+            </div>
+            <span class="label">SELECT ACCOUNT ROLE</span>
+            <div class="roles" role="group" aria-label="Select account role">
+              <button class="role active" type="button"> Principal</button
+              ><button class="role" type="button"> Teacher</button
+              ><button class="role" type="button"> Parent</button
+              ><button class="role" type="button"> Learner</button>
+            </div>
+            <div class="institution">
+              <span class="building" aria-hidden="true">▦</span>
+              <div>
+                <small>YOUR INSTITUTION</small
+                ><strong>Westridge Academy (Northern Cape)</strong>
+              </div>
+            </div>
+            <form id="signup-form">
+              <div class="fields">
+                <div>
+                  <label class="label" for="full-name">Full name</label
+                  ><input
+                    id="full-name"
+                    name="name"
+                    autocomplete="name"
+                    placeholder="e.g. Nandi Khumalo"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="label" for="staff-id">Staff / SACE number</label
+                  ><input
+                    id="staff-id"
+                    name="staff-id"
+                    placeholder="Enter your ID number"
+                  />
+                </div>
+                <div class="wide">
+                  <label class="label" for="email">School email address</label
+                  ><input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="you@westridge.edu.za"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="label" for="password">Create password</label
+                  ><input
+                    id="password"
+                    name="password"
+                    type="password"
+                    autocomplete="new-password"
+                    placeholder="At least 8 characters"
+                    minlength="8"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="label" for="confirm-password"
+                    >Confirm password</label
+                  ><input
+                    id="confirm-password"
+                    name="confirm-password"
+                    type="password"
+                    autocomplete="new-password"
+                    placeholder="Re-enter password"
+                    minlength="8"
+                    required
+                  />
+                </div>
+              </div>
+              <label class="terms"
+                ><input type="checkbox" required /><span
+                  >I agree to the <a href="#terms">Terms of Service</a> and
+                  <a href="#privacy">Privacy Policy</a>.</span
+                ></label
+              >
+              <button class="submit" type="submit">
+                Create EduSync Account
+              </button>
+            </form>
+            <p class="signin">
+              Already have an account? <a href="signin.html">Sign in</a>
+            </p>
+          </div>
+          <footer class="footer">
+          </footer>
+        </section>
+      </section>
+    </main>
+    <script src="signup.js"></script>
+  </body>
+</html>

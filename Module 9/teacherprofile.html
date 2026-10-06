@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#092875" />
+    <title>Educator Portal | EduSync</title>
+    <link rel="stylesheet" href="teacherprofile.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="admin.html"
+          ><img src="signup-signin/edusync_logo.png" alt="EduSync" /><span
+            >EduSync<small>School Platform</small></span
+          ></a
+        >
+        <nav aria-label="Main navigation">
+          <p>CORE</p>
+          <a href="admin.html"><i>?</i>Dashboard</a>
+          <a href="learnerprofile.html"><i>?</i>Learners &amp; Profiles</a>
+          <a class="active" href="teacherprofile.html"><i>?</i>Teachers &amp; Staff</a>
+          <a href="assessment.html"><i>?</i>Assessments &amp; Gradebook</a>
+          <a href="timetable.html"><i>?</i>Timetable &amp; Schedules</a>
+        </nav>
+        <footer>
+          <span>● Online • Data Synced</span
+          ><a href="#help">ⓘ Help &amp; Documentation</a
+          ><a class="out" href="signup-signin/signin.html">⇥ Sign Out</a>
+        </footer>
+      </aside>
+      <main>
+        <header class="topbar">
+          <button id="menu" aria-label="Toggle navigation">☰</button>
+          <div class="school">
+            <b>Westridge Academy <small>• Johannesburg (20 km)</small></b
+            ><span
+              ><em>Term 2 • Active</em> &nbsp;Connecting Schools. Empowering
+              Learning.</span
+            >
+          </div>
+          <div class="actions">
+            <button>⌕ <small>⌘K</small></button
+            ><button class="role">♙ Principal / Admin⌄</button><button>▣</button
+            ><button>♟<b class="badge">3</b></button>
+          </div>
+          <div class="user">
+            <i>BD</i
+            ><span
+              ><b>Dr. Bridgette Dinakedi</b
+              ><small>Executive Principal</small></span
+            >☷
+          </div>
+        </header>
+        <div class="content">
+          <section class="educator" id="teacher">
+            <img
+              src="images.jpg"
+              alt="Mr. Jabulani Sithole"
+            />
+            <div class="educator-info">
+              <small>EDUCATOR PORTAL • FACULTY ID #EDU-2041</small>
+              <h1>Mr. Jabulani Sithole</h1>
+              <p>
+                Senior Mathematics &amp; Sciences Educator &nbsp;|&nbsp; Class
+                Head: Grade 10A &nbsp;|&nbsp; STEM Block 2
+              </p>
+            </div>
+            <div class="teacher-actions">
+              <button
+                class="take"
+                data-action="Attendance marked for the active class."
+              >
+                ♧ Take Attendance</button
+              ><button data-action="Mark entry is ready to open.">
+                ▤ Record Marks</button
+              ><button data-action="Announcement composer opened.">
+                ⚑ Announcement</button
+              ><button data-action="Parent meeting scheduler opened.">
+                ▣ Parent Meet
+              </button>
+            </div>
+            <div class="period">
+              <b
+                >● Active Period 2: Grade 11B Physical Sciences (08:55 –
+                09:45)</b
+              ><span>◷ Next: Grade 12A Adv. Math (10:00 Room 14)</span>
+              <div><em>Term 2 • Week 6</em><em>Today: Tuesday, 13 May</em></div>
+            </div>
+          </section>
+          <div class="layout">
+            <div class="maincol">
+              <section class="panel schedule" id="timetable">
+                <div class="heading">
+                  <div>
+                    <small>DAY OPERATIONS • <b>Live Timetable</b></small>
+                    <h2>Today's Teaching Schedule</h2>
+                  </div>
+                  <span class="sessions"
+                    >● 4 Scheduled Sessions (3 Teaching, 1 Prep)</span
+                  >
+                </div>
+                <div class="periods">
+                  <article>
+                    <div>
+                      <small>PERIOD 1</small
+                      ><span class="state done">✓ Done</span>
+                    </div>
+                    <time>08:00 - 08:50</time>
+                    <h3>Grade 10A</h3>
+                    <p>Mathematics</p>
+                    <footer>▣ Room 14<br /><b>29/30 Marked</b></footer>
+                  </article>
+                  <article class="current">
+                    <div>
+                      <small>PERIOD 2</small
+                      ><span class="state now">● In Session</span>
+                    </div>
+                    <time>08:55 - 09:45</time>
+                    <h3>Grade 11B</h3>
+                    <p>Physical Sciences</p>
+                    <footer>♧ Lab 2 (Optics)<br /><b>28 Learners</b></footer>
+                  </article>
+                  <article>
+                    <div>
+                      <small>PERIOD 3</small
+                      ><span class="state">◷ Upcoming</span>
+                    </div>
+                    <time>10:00 - 10:50</time>
+                    <h3>Grade 12A</h3>
+                    <p>Advanced Calculus</p>
+                    <footer>▣ Room 14<br /><b>Prep Sheets Ready</b></footer>
+                  </article>
+                  <article>
+                    <div>
+                      <small>PERIOD 4</small
+                      ><span class="state">♟ Meeting</span>
+                    </div>
+                    <time>11:15 - 12:05</time>
+                    <h3>STEM Dept</h3>
+                    <p>Curriculum Moderation</p>
+                    <footer>▦ Boardroom B<br /><b>HOD Chaired</b></footer>
+                  </article>
+                </div>
+              </section>
+              <section class="panel roster" id="attendance">
+                <div class="heading">
+                  <div>
+                    <span class="class-chip">Grade 10A Roster</span
+                    ><small> • Morning Session Register</small>
+                    <h2>Interactive Roll Call Register</h2>
+                  </div>
+                  <div class="counts">
+                    <span id="learners">30 Learners</span
+                    ><span class="present"
+                      >● <b id="present-count">28</b> Present</span
+                    ><span class="absent"
+                      >● <b id="absent-count">1</b> Absent</span
+                    ><span class="late">● <b id="late-count">1</b> Late</span>
+                  </div>
+                </div>
+                <div class="toolbar">
+                  <input
+                    id="filter"
+                    type="search"
+                    placeholder="⌕  Filter roster by student name or roll..."
+                  /><button id="mark-all">Mark All Present</button
+                  ><button id="sort">☷ Sort by Roll</button>
+                </div>
+                <div class="roster-scroll">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th># ROLL</th>
+                        <th>LEARNER INFO</th>
+                        <th>STATUS SELECTOR</th>
+                        <th>OBSERVATION / NOTE</th>
+                        <th>ARRIVAL</th>
+                      </tr>
+                    </thead>
+                    <tbody id="roster-body"></tbody>
+                  </table>
+                </div>
+                <div class="register-footer">
+                  <span id="saved-status"
+                    >♧ Autosaved locally. Final register requires office
+                    submission.</span
+                  ><button id="save-draft">Save Draft</button
+                  ><button class="submit" id="submit-register">
+                    ▷ &nbsp;Save &amp; Submit Register to Admin Office
+                  </button>
+                </div>
+              </section>
+              <section class="panel assessments" id="assessments">
+                <div class="heading">
+                  <div>
+                    <small>CONTINUOUS EVALUATION • <b>Gradebook Sync</b></small>
+                    <h2>Recent Assessments &amp; Mark Entry Progress</h2>
+                  </div>
+                  <button data-action="Batch mark entry sheet prepared.">
+                    ▤ &nbsp;Batch Mark Entry Sheet
+                  </button>
+                </div>
+                <div class="assessment-grid">
+                  <article>
+                    <div class="assessment-tag">
+                      ◉ Moderated &amp; Published <span>Weight: 20%</span>
+                    </div>
+                    <h3>Grade 10 Math Test 2</h3>
+                    <p>Topic: Algebra &amp; Functions</p>
+                    <div class="mark-progress">
+                      <span>Marks Recorded</span><b>30 of 30 Learners (100%)</b
+                      ><i><u style="width: 100%"></u></i>
+                    </div>
+                    <div class="average">
+                      Class Average <strong>68.4%</strong
+                      ><span>Highest<br /><b>96%</b></span>
+                    </div>
+                    <footer>
+                      Moderated by: Dr. N. Khumalo
+                      <a href="#breakdown">View Breakdown →</a>
+                    </footer>
+                  </article>
+                  <article>
+                    <div class="assessment-tag">
+                      ● In Progress (Draft) <span>Weight: 15%</span>
+                    </div>
+                    <h3>Grade 11 Science Practical Assignment</h3>
+                    <p>Optics: Snell's Law &amp; Refractive Indices</p>
+                    <div class="mark-progress">
+                      <span>Marks Recorded</span><b>18 of 28 Learners (64%)</b
+                      ><i><u style="width: 64%"></u></i>
+                    </div>
+                    <div class="due">
+                      ⌛ 10 rubric sheets remaining. Due today at 16:30 for
+                      moderation.
+                    </div>
+                    <footer class="urgent">
+                      Due in 4 hours
+                      <button
+                        data-action="Continue scoring Grade 11 Science Practical Assignment."
+                      >
+                        Continue Scoring
+                      </button>
+                    </footer>
+                  </article>
+                </div>
+              </section>
+            </div>
+            <aside class="rightcol">
+              <section class="panel alerts">
+                <div class="heading">
+                  <div>
+                    <small class="redtext">♙ EARLY WARNING ALERTS</small>
+                    <h2>At-Risk Interventions</h2>
+                  </div>
+                  <span class="alert-count">2 Learners</span>
+                </div>
+                <article class="risk">
+                  <div class="risk-head">
+                    <i>KM</i
+                    ><span
+                      ><b>Kagiso Molefe</b
+                      ><small>Grade 10A • Mathematics</small></span
+                    ><strong>Chronic Late</strong>
+                  </div>
+                  <p>
+                    Tardy 4 times this term. Missed introductory quadratic
+                    equations modules.
+                  </p>
+                  <footer>
+                    Guardian: Mrs. P. Molefe
+                    <button
+                      data-action="SMS alert prepared for Kagiso Molefe's guardian."
+                    >
+                      ▯ SMS Alert
+                    </button>
+                  </footer>
+                </article>
+                <article class="risk">
+                  <div class="risk-head">
+                    <i>LN</i
+                    ><span
+                      ><b>Lindiwe Nkosi</b
+                      ><small>Grade 11B • Physical Sciences</small></span
+                    ><strong>Grade Dip (&lt;40%)</strong>
+                  </div>
+                  <p>
+                    Scored 34% on Vectors test. Recommended for Wednesday peer
+                    tutoring lab.
+                  </p>
+                  <footer>
+                    Guardian: Mr. B. Nkosi
+                    <button
+                      data-action="SMS alert prepared for Lindiwe Nkosi's guardian."
+                    >
+                      ▯ SMS Alert
+                    </button>
+                  </footer>
+                </article>
+              </section>
+              <section class="panel messages" id="communication">
+                <div class="heading">
+                  <div>
+                    <small>▱ DIRECT INQUIRIES</small>
+                    <h2>Parent Communications</h2>
+                  </div>
+                  <span class="live">Live Feed</span>
+                </div>
+                <article class="message">
+                  <div class="sender">
+                    <i>BM</i
+                    ><span
+                      ><b>Mrs. Busisiwe Mthembu</b
+                      ><small
+                        >Mother of Jabulani M. (Grade 10A) • 18m ago</small
+                      ></span
+                    >
+                  </div>
+                  <blockquote>
+                    “Good morning Mr. Sithole. Jabulani mentioned extra calculus
+                    support is on Thursdays. Could you confirm if transportation
+                    will be available after school?”
+                  </blockquote>
+                  <label for="reply">Instant Response:</label>
+                  <div class="reply">
+                    <input
+                      id="reply"
+                      value="Good day Mrs. Mthembu. Yes, the support session is on Thursday..."
+                    /><button id="send">➤</button>
+                  </div>
+                </article>
+                <div class="broadcast">
+                  <b>▣ Grade 10A SMS Broadcast</b
+                  ><span>Send notice to all 30 guardians</span
+                  ><button data-action="Grade 10A broadcast composer opened.">
+                    Compose
+                  </button>
+                </div>
+              </section>
+              <button
+                class="curriculum"
+                data-action="CAPS Curriculum Matrix downloaded."
+              >
+                <span
+                  >▣ <b>CAPS Curriculum Matrix</b
+                  ><small>Term 2 South African syllabus alignment</small></span
+                ><i>⇩</i>
+              </button>
+            </aside>
+          </div>
+          <div class="toast" id="toast" role="status" aria-live="polite"></div>
+        </div>
+      </main>
+    </div>
+    <script src="teacherprofile.js"></script>
+  </body>
+</html>
